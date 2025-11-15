@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lucía Díaz Ordóñez · Maestra Infantil, Primaria y PT</title>
+    <title>Lucía Díaz Ordóñez · Maestra Infantil, Primaria, PT y AL</title>
+
+    <!-- SEO BÁSICO -->
+    <meta name="description" content="Lucía Díaz Ordóñez, Maestra de Educación Infantil, Primaria, Pedagogía Terapéutica (PT) y Audición y Lenguaje (AL). Experiencia en educación bilingüe, inclusión y metodologías activas.">
+    <meta name="keywords" content="Lucía Díaz Ordóñez, Maestra Infantil, Maestra Primaria, PT, AL, Educación Especial, Oviedo, Asturias">
+    <meta name="author" content="Lucía Díaz Ordóñez">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Lucía Díaz Ordóñez · Maestra Infantil, Primaria, PT y AL">
+    <meta property="og:description" content="Educadora con experiencia en Infantil, Primaria, PT, AL, inglés, inclusión y metodologías activas.">
+    <meta property="og:image" content="https://luciadiazordonez.github.io/foto.png">
+    <meta property="og:url" content="https://luciadiazordonez.github.io/">
+
+    <!-- TWITTER CARD -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Lucía Díaz Ordóñez · Maestra Infantil, Primaria, PT y AL">
+    <meta name="twitter:image" content="https://luciadiazordonez.github.io/foto.png">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
@@ -12,18 +28,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
-
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Quicksand', sans-serif;
             background: #fffdf6;
             padding-top: 80px;
         }
 
-        nav {
-            background: #ffb6c1 !important;
+        nav { background: #ffb6c1 !important; }
+
+        .lang-switch {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .lang-switch a {
+            padding: 6px 12px;
+            background: white;
+            border-radius: 20px;
+            font-size: 14px;
+            border: 1px solid #ddd;
+            margin: 0 5px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .lang-switch a:hover {
+            background: #ffb6c1;
+            color: white;
         }
 
         .hero {
@@ -65,15 +97,24 @@
             margin-top: 40px;
         }
 
-        footer a {
-            color: white;
-            text-decoration: underline;
+        footer a { color: white; }
+
+        /* Optimización móvil */
+        @media(max-width:768px) {
+            img.rounded-circle { max-width: 150px !important; }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- NAV RESPONSIVE -->
+    <!-- SELECTOR IDIOMA -->
+    <div class="lang-switch">
+        <a href="index.html">🇪🇸 Español</a>
+        <a href="english.html">🇬🇧 English</a>
+    </div>
+
+    <!-- NAV -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Lucía Díaz Ordóñez</a>
@@ -94,17 +135,14 @@
         </div>
     </nav>
 
-    <!-- PORTADA -->
+    <!-- HERO -->
     <section class="hero text-center">
         <img src="foto.png" class="rounded-circle mb-3 img-fluid" style="max-width:200px;" alt="Foto">
 
         <h1>Maestra de Infantil, Primaria y Pedagogía Terapéutica</h1>
         <p class="lead">Vocación, creatividad y experiencia en educación bilingüe e inclusión.</p>
 
-        <!-- BOTÓN CV -->
-        <a href="cv.pdf" class="btn btn-primary" style="background:#ff9db5;border:none;">
-            📄 Descargar CV
-        </a>
+        <a href="cv.pdf" class="btn btn-primary" style="background:#ff9db5;border:none;">📄 Descargar CV</a>
     </section>
 
     <div class="container">
@@ -148,7 +186,7 @@
         <section id="formacion" class="my-5">
             <h2 class="section-title">Formación Académica</h2>
 
-            <div class="card-custom mb-3">
+            <div class="card-custom">
                 <p><strong>Mención en Audición y Lenguaje</strong> (UCJC) · 2025–2026 (en curso)</p>
                 <p><strong>Máster en Educación Especial</strong> (UNIR) · 2025</p>
                 <p><strong>Mención Pedagogía Terapéutica</strong> (UCJC) · 2024</p>
@@ -172,7 +210,7 @@
             </div>
         </section>
 
-        <!-- INFORMACIÓN DE INTERÉS -->
+        <!-- INFORMACIÓN -->
         <section id="info" class="my-5">
             <h2 class="section-title">Información de Interés</h2>
 
@@ -189,48 +227,25 @@
         </section>
 
         <!-- CONTACTO -->
-       <section id="contacto" class="my-5">
-    <h2 class="section-title">Contacto</h2>
+        <section id="contacto" class="my-5">
+            <h2 class="section-title">Contacto</h2>
 
-    <div class="card-custom">
-
-        <p>
-            <strong>📧 Email:</strong>
-            <a href="mailto:luciadiord@gmail.com">luciadiord@gmail.com</a>
-        </p>
-
-        <p>
-            <strong>📍 Ubicación:</strong> Oviedo
-        </p>
-
-        <p>
-            <strong>📱 Teléfono:</strong>
-            <a href="tel:615513350">615 51 33 50</a>
-        </p>
-
-        <p>
-            <strong>💬 WhatsApp:</strong>
-            <a href="https://wa.me/34615513350" target="_blank">
-                Enviar mensaje por WhatsApp
-            </a>
-        </p>
-
-    </div>
-</section>
+            <div class="card-custom">
+                <p><strong>Email:</strong> <a href="mailto:luciadiord@gmail.com">luciadiord@gmail.com</a></p>
+                <p><strong>Ubicación:</strong> Oviedo</p>
+                <p><strong>Teléfono:</strong> <a href="tel:615513350">615 51 33 50</a></p>
+                <p><strong>WhatsApp:</strong> <a href="https://wa.me/34615513350" target="_blank">Enviar mensaje</a></p>
+            </div>
+        </section>
 
     </div>
 
-    <!-- FOOTER -->
     <footer class="text-center">
-        &copy; 2025 · Lucía Díaz Ordóñez · 
-        <a href="https://www.linkedin.com/in/luc%C3%ADa-d%C3%ADaz-ord%C3%B3%C3%B1ez-476402102/" target="_blank">
-            Mi LinkedIn
-        </a>
+        © 2025 · Lucía Díaz Ordóñez · 
+        <a href="https://www.linkedin.com/in/luc%C3%ADa-d%C3%ADaz-ord%C3%B3%C3%B1ez-476402102/" target="_blank">LinkedIn</a>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
-
