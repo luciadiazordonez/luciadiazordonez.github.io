@@ -1,85 +1,102 @@
+html { 
+    scroll-behavior: smooth; 
+}
+
 body {
-    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background: #fffdf6;
+    padding-top: 80px;
 }
 
-/* Espaciado estándar de secciones */
-.section-padding {
-    padding: 80px 0;
+/* NAV */
+nav { 
+    background: #ffb6c1 !important; 
 }
 
-.section-title {
+/* Texto del menú EN NEGRO */
+nav a,
+nav a:visited {
+    color: black !important;
+}
+
+/* Botón hamburguesa rosa, borde negro, icono negro */
+.navbar-toggler {
+    background: #ffb6c1 !important;   /* fondo rosa */
+    border: 2px solid black !important;
+    border-radius: 10px !important;
+    padding: 6px 10px;
+}
+
+/* Icono hamburguesa en negro */
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Icono X en negro */
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M6 6l18 18M24 6L6 24'/%3E%3C/svg%3E");
+}
+
+/* Selector de idioma */
+.lang-switch {
+    margin-top: 15px;
+    text-align: center;
+}
+.lang-switch a {
+    padding: 6px 12px;
+    background: white;
+    border-radius: 20px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+}
+.lang-switch a:hover {
+    background: #ffb6c1;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    background: #ffecec;
+    padding: 60px 20px;
+    border-bottom: 4px solid #ff9db5;
+}
+.hero h1 {
+    color: #d23b59;
     font-weight: 700;
-    font-size: 1.9rem;
 }
 
-/* Hero */
-.hero-section {
-    padding-top: 100px; /* Para compensar la navbar fija */
-    padding-bottom: 80px;
-    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 60%);
+/* Títulos */
+.section-title {
+    color: #d23b59;
+    border-left: 6px solid #ff9db5;
+    padding-left: 10px;
+    margin-bottom: 25px;
+    font-weight: 700;
 }
 
-.hero-photo-wrapper {
-    max-width: 260px;
+/* Tarjetas */
+.card-custom {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #ffd6dd;
+    transition: 0.3s;
+}
+.card-custom:hover {
+    transform: scale(1.02);
+    border-color: #ff9db5;
 }
 
-.hero-photo {
-    border: 5px solid rgba(13, 110, 253, 0.1);
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 15px;
+    margin-top: 40px;
 }
-
-/* Tarjetas info */
-.info-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-}
-
-/* Timeline experiencia */
-.timeline {
-    position: relative;
-    padding-left: 24px;
-    border-left: 2px solid #e0e0e0;
-}
-
-.timeline-item {
-    position: relative;
-    margin-bottom: 24px;
-}
-
-.timeline-marker {
-    position: absolute;
-    left: -9px;
-    top: 6px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background-color: #0d6efd;
-}
-
-.timeline-content h5 {
-    font-size: 1.1rem;
-}
-
-/* Proyectos y documentos */
-.project-card,
-.doc-card {
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 1px solid #e5e7eb;
-}
-
-/* Navbar */
-.navbar-brand {
-    letter-spacing: 0.1em;
-}
-
-/* Responsive pequeños ajustes */
-@media (max-width: 767.98px) {
-    .hero-section {
-        text-align: center;
-    }
-
-    .timeline {
-        padding-left: 16px;
-    }
+footer a { 
+    color: white; 
 }
