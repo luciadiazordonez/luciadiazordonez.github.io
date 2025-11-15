@@ -3,460 +3,191 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículum - Maestra de Infantil y Primaria</title>
-
-    <!-- Bootstrap 5 -->
-    <link 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-        rel="stylesheet"
-    >
+    <title>Lucía Díaz Ordóñez · Maestra Infantil, Primaria y PT</title>
 
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link 
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" 
-        rel="stylesheet"
-    >
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <!-- Estilos propios -->
-    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            background: #fffdf6;
+            padding-top: 80px;
+        }
+
+        nav {
+            background: #ffb6c1;
+        }
+
+        .hero {
+            background: #ffecec;
+            padding: 60px 20px;
+            border-bottom: 4px solid #ff9db5;
+        }
+
+        .hero h1 {
+            font-weight: 700;
+            color: #d23b59;
+        }
+
+        .section-title {
+            font-weight: 700;
+            color: #d23b59;
+            border-left: 6px solid #ff9db5;
+            padding-left: 10px;
+            margin-bottom: 25px;
+        }
+
+        .card-custom {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            border: 2px solid #ffd6dd;
+            transition: 0.3s;
+        }
+
+        .card-custom:hover {
+            transform: scale(1.02);
+            border-color: #ff9db5;
+        }
+
+        footer {
+            background: #ffb6c1;
+            color: white;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <!-- NAV -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light shadow-sm">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="#inicio">
-                <!-- Puedes sustituir por un logo -->
-                MP
-            </a>
-            <button 
-                class="navbar-toggler" 
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div 
-                class="collapse navbar-collapse justify-content-end" 
-                id="navbarNav"
-            >
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiencia">Experiencia</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formacion">Formación</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competencias">Competencias</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Proyectos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#documentos">Documentos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+            <a class="navbar-brand fw-bold" href="#">Lucía Díaz Ordóñez</a>
         </div>
     </nav>
 
-    <!-- Portada / Hero -->
-    <header id="inicio" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center g-4">
-                <div class="col-md-7">
-                    <p class="text-uppercase small text-primary fw-semibold mb-2">
-                        Maestra de Educación Infantil y Primaria
-                    </p>
-                    <h1 class="display-5 fw-bold mb-3 mt-5">
-                        Nombre Apellidos
-                    </h1>
-                    <p class="lead text-muted mb-4">
-                        Maestra con experiencia en Educación Infantil y Primaria, 
-                        especializada en metodologías activas, aprendizaje cooperativo 
-                        y educación emocional. Comprometida con el desarrollo integral 
-                        del alumnado y la colaboración con las familias.
-                    </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="cv.pdf" class="btn btn-primary btn-lg" target="_blank">
-                            Descargar CV
-                        </a>
-                        <a href="#contacto" class="btn btn-outline-primary btn-lg">
-                            Contactar
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-5 text-center">
-                    <!-- Sustituye la imagen por una tuya -->
-                    <div class="hero-photo-wrapper mx-auto">
-                        <img 
-                            src="https://via.placeholder.com/400x400" 
-                            alt="Foto profesional" 
-                            class="img-fluid rounded-circle hero-photo"
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <!-- PORTADA -->
+    <section class="hero text-center">
+        <img src="https://via.placeholder.com/180" class="rounded-circle mb-3" alt="Foto">
+        <h1>Maestra de Infantil, Primaria y Pedagogía Terapéutica</h1>
+        <p class="lead">Vocación, creatividad y experiencia en educación bilingüe e inclusión.</p>
 
-    <!-- Sobre mí -->
-    <section id="sobre-mi" class="section-padding bg-light">
-        <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-md-6">
-                    <h2 class="section-title">Sobre mí</h2>
-                    <p>
-                        Soy maestra de Educación Infantil y Primaria con experiencia en 
-                        tutoría de aula, diseño de unidades didácticas y atención a la diversidad. 
-                        Mi trabajo se basa en un enfoque cercano, respetuoso y activo, donde el 
-                        alumnado es el verdadero protagonista del aprendizaje.
-                    </p>
-                    <p>
-                        Me apasiona crear entornos de aula seguros, motivadores y organizados, 
-                        en los que se trabajen tanto las competencias académicas como las sociales 
-                        y emocionales.
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="row g-3">
-                        <div class="col-sm-6">
-                            <div class="info-card p-3 h-100">
-                                <h6 class="text-uppercase text-muted small mb-1">Especialidad</h6>
-                                <p class="mb-0">Educación Infantil y Primaria</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="info-card p-3 h-100">
-                                <h6 class="text-uppercase text-muted small mb-1">Ubicación</h6>
-                                <p class="mb-0">Ciudad, Provincia</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="info-card p-3 h-100">
-                                <h6 class="text-uppercase text-muted small mb-1">Experiencia</h6>
-                                <p class="mb-0">X años en Infantil y Primaria</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="info-card p-3 h-100">
-                                <h6 class="text-uppercase text-muted small mb-1">Disponibilidad</h6>
-                                <p class="mb-0">Incorporación inmediata / Curso 20XX-20XX</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- BOTÓN CV -->
+        <a href="cv.pdf" class="btn btn-primary" style="background:#ff9db5;border:none;">
+            📄 Descargar CV
+        </a>
     </section>
 
-    <!-- Experiencia -->
-    <section id="experiencia" class="section-padding">
-        <div class="container">
-            <h2 class="section-title mb-4">Experiencia docente</h2>
+    <div class="container">
 
-            <div class="timeline">
+        <!-- EXPERIENCIA -->
+        <section class="my-5">
+            <h2 class="section-title">Experiencia Laboral</h2>
 
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h5 class="mb-1">
-                            Maestra de Educación Infantil 
-                            <span class="text-muted fw-normal">— CEIP Nombre del Centro</span>
-                        </h5>
-                        <p class="text-muted small mb-2">
-                            2022 – Actualidad · Ciudad, Provincia
-                        </p>
-                        <ul class="mb-0">
-                            <li>Tutora de aula de 4–5 años.</li>
-                            <li>Diseño de rutinas y proyectos de trabajo por rincones.</li>
-                            <li>Comunicación periódica con familias y coordinación de ciclo.</li>
-                            <li>Implementación de actividades de educación emocional.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h5 class="mb-1">
-                            Maestra de Educación Primaria 
-                            <span class="text-muted fw-normal">— Colegio Nombre del Centro</span>
-                        </h5>
-                        <p class="text-muted small mb-2">
-                            2019 – 2022 · Ciudad, Provincia
-                        </p>
-                        <ul class="mb-0">
-                            <li>Tutora de 1.º y 2.º de Primaria.</li>
-                            <li>Planificación y evaluación por competencias.</li>
-                            <li>Refuerzo educativo y apoyo individualizado.</li>
-                            <li>Participación en equipos de convivencia y orientación.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Añade más bloques según tu experiencia -->
-
+            <div class="card-custom mb-3">
+                <h5 class="fw-bold">Maestra de PT · Academia Carta Blanca (Madrid)</h5>
+                <small>Agosto 2024 – Agosto 2025</small>
+                <p class="mt-2">PT en Primaria y Secundaria. Inglés adultos. Español para extranjeros.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Formación -->
-    <section id="formacion" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title mb-4">Formación</h2>
-
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <h5>Formación reglada</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li class="mb-3">
-                            <strong>Grado en Educación Infantil</strong><br>
-                            Universidad Nombre — Año de finalización
-                        </li>
-                        <li class="mb-3">
-                            <strong>Grado en Educación Primaria (si lo tienes)</strong><br>
-                            Universidad Nombre — Año de finalización
-                        </li>
-                        <li class="mb-3">
-                            <strong>Mención / Especialidad</strong><br>
-                            Pedagogía Terapéutica / Inglés / Audición y Lenguaje
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6">
-                    <h5>Formación complementaria</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li class="mb-2">
-                            Curso de metodologías activas en el aula — XX horas
-                        </li>
-                        <li class="mb-2">
-                            Curso de atención a la diversidad y NEAE — XX horas
-                        </li>
-                        <li class="mb-2">
-                            Competencia digital docente (nivel A2/B1/B2)
-                        </li>
-                        <li class="mb-2">
-                            Primeros auxilios en centros educativos — XX horas
-                        </li>
-                    </ul>
-                </div>
+            <div class="card-custom mb-3">
+                <h5 class="fw-bold">Tutora y Maestra de Primaria · Colegio Antamira (Madrid)</h5>
+                <small>Septiembre 2021 – Junio 2024</small>
+                <p class="mt-2">Tutora en inglés, coordinadora Arts & Music, profesora de extraescolares.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Competencias -->
-    <section id="competencias" class="section-padding">
-        <div class="container">
-            <h2 class="section-title mb-4">Competencias</h2>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <h5>Profesionales</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li>Diseño de programaciones y unidades didácticas.</li>
-                        <li>Gestión y organización del aula.</li>
-                        <li>Atención a la diversidad y adaptación de materiales.</li>
-                        <li>Evaluación formativa y por competencias.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Digitales</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li>Google Classroom, Drive, Meet.</li>
-                        <li>Uso de PDI y recursos TIC en el aula.</li>
-                        <li>Creación de materiales digitales interactivos.</li>
-                        <li>Manejo de plataformas educativas del centro.</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <h5>Personales</h5>
-                    <ul class="list-unstyled mt-3">
-                        <li>Trabajo en equipo y coordinación docente.</li>
-                        <li>Comunicación efectiva con familias.</li>
-                        <li>Empatía y escucha activa.</li>
-                        <li>Responsabilidad y planificación.</li>
-                    </ul>
-                </div>
+            <div class="card-custom mb-3">
+                <h5 class="fw-bold">Maestra de Infantil · Colegio Parque (Madrid)</h5>
+                <small>Septiembre 2016 – Julio 2021</small>
+                <p class="mt-2">Tutora de Infantil en inglés y docente de actividades extraescolares.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Proyectos -->
-    <section id="proyectos" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title mb-4">Proyectos educativos</h2>
-
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="project-card p-4 h-100">
-                        <h5 class="mb-2">Proyecto “Descubriendo las emociones”</h5>
-                        <p class="text-muted small mb-2">Educación Infantil · 4–5 años</p>
-                        <p class="mb-0">
-                            Proyecto centrado en el reconocimiento y expresión de las emociones 
-                            a través de cuentos, asambleas, murales y dinámicas de juego. 
-                            Incluye rincones específicos y materiales manipulativos.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div class="project-card p-4 h-100">
-                        <h5 class="mb-2">Itinerario lector en Primaria</h5>
-                        <p class="text-muted small mb-2">1.º y 2.º de Primaria</p>
-                        <p class="mb-0">
-                            Diseño de un plan lector adaptado a los distintos ritmos, 
-                            con actividades de comprensión, dramatización de textos, 
-                            debates sencillos y conexión con otras áreas.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Añade más proyectos si quieres -->
-
+            <div class="card-custom mb-3">
+                <h5 class="fw-bold">Inglés infantil · Da Vinci School (Oviedo)</h5>
+                <small>Septiembre 2015 – Septiembre 2016</small>
+                <p class="mt-2">Inglés para bebés y niños. Integración multisensorial.</p>
             </div>
-        </div>
-    </section>
 
-    <!-- Documentos -->
-    <section id="documentos" class="section-padding">
-        <div class="container">
-            <h2 class="section-title mb-4">Documentos descargables</h2>
-
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="doc-card p-4 h-100">
-                        <h5 class="mb-2">Currículum completo</h5>
-                        <p class="text-muted small mb-3">
-                            Versión actualizada en formato PDF.
-                        </p>
-                        <a href="docs/cv.pdf" class="btn btn-outline-primary w-100" target="_blank">
-                            Descargar
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="doc-card p-4 h-100">
-                        <h5 class="mb-2">Programación didáctica</h5>
-                        <p class="text-muted small mb-3">
-                            Ejemplo de programación para un ciclo o nivel.
-                        </p>
-                        <a href="docs/programacion.pdf" class="btn btn-outline-primary w-100" target="_blank">
-                            Descargar
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="doc-card p-4 h-100">
-                        <h5 class="mb-2">Unidad didáctica</h5>
-                        <p class="text-muted small mb-3">
-                            Unidad didáctica de muestra con actividades y evaluación.
-                        </p>
-                        <a href="docs/unidad.pdf" class="btn btn-outline-primary w-100" target="_blank">
-                            Descargar
-                        </a>
-                    </div>
-                </div>
+            <div class="card-custom mb-3">
+                <h5 class="fw-bold">Maestra Infantil · International Trilingual School of Warsaw (Polonia)</h5>
+                <small>Febrero 2014 – Junio 2015</small>
+                <p class="mt-2">Tutoría, clases en inglés y español, escuela internacional.</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contacto -->
-    <section id="contacto" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title mb-4">Contacto</h2>
+        <!-- FORMACIÓN -->
+        <section class="my-5">
+            <h2 class="section-title">Formación Académica</h2>
 
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <p class="mb-3">
-                        Si quieres contactar conmigo para una posible incorporación al centro, 
-                        colaboración o entrevista, puedes escribirme a través del formulario 
-                        o mediante los siguientes medios:
-                    </p>
-                    <ul class="list-unstyled">
-                        <li class="mb-2">
-                            <strong>Email:</strong> 
-                            <a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a>
-                        </li>
-                        <li class="mb-2">
-                            <strong>Teléfono:</strong> 600 000 000
-                        </li>
-                        <li class="mb-2">
-                            <strong>LinkedIn:</strong> 
-                            <a href="#" target="_blank">linkedin.com/in/tu-perfil</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-6">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nombre" class="form-label">Nombre</label>
-                            <input 
-                                type="text" 
-                                class="form-control" 
-                                id="nombre" 
-                                placeholder="Escribe tu nombre"
-                            >
-                        </div>
-                        <div class="mb-3">
-                            <label for="emailContacto" class="form-label">Email</label>
-                            <input 
-                                type="email" 
-                                class="form-control" 
-                                id="emailContacto" 
-                                placeholder="nombre@ejemplo.com"
-                            >
-                        </div>
-                        <div class="mb-3">
-                            <label for="mensaje" class="form-label">Mensaje</label>
-                            <textarea 
-                                class="form-control" 
-                                id="mensaje" 
-                                rows="4" 
-                                placeholder="Escribe tu mensaje"
-                            ></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">
-                            Enviar mensaje
-                        </button>
-                    </form>
-                </div>
+            <div class="card-custom mb-3">
+                <p><strong>Mención en Audición y Lenguaje</strong> (UCJC) · 2025–2026 (en curso)</p>
+                <p><strong>Máster en Educación Especial</strong> (UNIR) · 2025</p>
+                <p><strong>Mención Pedagogía Terapéutica</strong> (UCJC) · 2024</p>
+                <p><strong>Grado en Educación Primaria</strong> (UCJC) · 2020</p>
+                <p><strong>Grado en Educación Infantil</strong> (Uniovi) · 2015</p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Pie -->
-    <footer class="py-4 border-top">
-        <div class="container text-center small text-muted">
-            &copy; <span id="year"></span> Nombre Apellidos · Maestra de Educación Infantil y Primaria
-        </div>
+        <!-- IDIOMAS -->
+        <section class="my-5">
+            <h2 class="section-title">Idiomas</h2>
+
+            <div class="card-custom">
+                <ul>
+                    <li>C1 Cambridge Advanced Exam (CAE)</li>
+                    <li>C1 Habilitación lingüística CAM</li>
+                    <li>C2.2 Inglés (GetBrit)</li>
+                    <li>HSK1 Chino mandarín</li>
+                    <li>A2 Alemán (EOI Oviedo)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- INFORMACIÓN DE INTERÉS -->
+        <section class="my-5">
+            <h2 class="section-title">Información de Interés</h2>
+
+            <div class="card-custom">
+                <ul>
+                    <li>Programa Universitario en Bases Neuropsicológicas (2024)</li>
+                    <li>Autora del álbum ilustrado <em>Sol de Membrillo</em> (2024)</li>
+                    <li>Formación en aprendizaje cooperativo, TIC y primeros auxilios (2023)</li>
+                    <li>Jolly Phonics Training Course (2022)</li>
+                    <li>Voluntariado activo (Asociación Sol, Guardianes del Castillo)</li>
+                    <li>Permiso de conducir y vehículo propio</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section class="my-5">
+            <h2 class="section-title">Contacto</h2>
+
+            <div class="card-custom">
+                <p><strong>📧 Email:</strong> luciadiord@gmail.com</p>
+                <p><strong>📍 Ubicación:</strong> Oviedo</p>
+                <p><strong>📱 Teléfono:</strong> 615 51 33 50</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        &copy; 2025 · Lucía Díaz Ordóñez · 
+        <a href="https://www.linkedin.com/in/luc%C3%ADa-d%C3%ADaz-ord%C3%B3%C3%B1ez-476402102/" target="_blank">
+            Mi LinkedIn
+        </a>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-
-    <!-- Script año automático -->
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
 </body>
 </html>
-
