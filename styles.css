@@ -1,0 +1,85 @@
+body {
+    font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* Espaciado estándar de secciones */
+.section-padding {
+    padding: 80px 0;
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 1.9rem;
+}
+
+/* Hero */
+.hero-section {
+    padding-top: 100px; /* Para compensar la navbar fija */
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #f8f9ff 0%, #ffffff 60%);
+}
+
+.hero-photo-wrapper {
+    max-width: 260px;
+}
+
+.hero-photo {
+    border: 5px solid rgba(13, 110, 253, 0.1);
+}
+
+/* Tarjetas info */
+.info-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Timeline experiencia */
+.timeline {
+    position: relative;
+    padding-left: 24px;
+    border-left: 2px solid #e0e0e0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+}
+
+.timeline-content h5 {
+    font-size: 1.1rem;
+}
+
+/* Proyectos y documentos */
+.project-card,
+.doc-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Navbar */
+.navbar-brand {
+    letter-spacing: 0.1em;
+}
+
+/* Responsive pequeños ajustes */
+@media (max-width: 767.98px) {
+    .hero-section {
+        text-align: center;
+    }
+
+    .timeline {
+        padding-left: 16px;
+    }
+}
