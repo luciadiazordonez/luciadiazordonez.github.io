@@ -4,37 +4,38 @@ html {
 
 body {
     font-family: 'Quicksand', sans-serif;
-    background: #fffdf6;
+    background: #FFFDFC; /* fondo pastel */
     padding-top: 80px;
 }
 
-/* NAV */
+/* ===================== NAV ===================== */
+
 nav { 
-    background: #ffb6c1 !important; 
+    background: #FFCF9F !important; /* NAV pastel melocotón */
 }
 
-/* Texto del menú EN NEGRO */
+/* Texto del menú (negro suave) */
 nav a,
 nav a:visited {
-    color: black !important;
+    color: #3A3A3A !important; /* gris oscuro legible */
 }
 
-/* Botón hamburguesa rosa, borde negro, icono negro */
+/* Botón hamburguesa pastel + borde */
 .navbar-toggler {
-    background: #ffb6c1 !important;   /* fondo rosa */
-    border: 2px solid black !important;
+    background: #3A3A3A !important; /* gris carbón, más suave que negro puro */
+    border: 2px solid #3A3A3A !important;
     border-radius: 10px !important;
     padding: 6px 10px;
 }
 
-/* Icono hamburguesa en negro */
+/* Icono hamburguesa */
 .navbar-toggler.collapsed .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFDFC' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
 
-/* Icono X en negro */
+/* Icono X */
 .navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='2' d='M6 6l18 18M24 6L6 24'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23FFFDFC' stroke-width='2' d='M6 6l18 18M24 6L6 24'/%3E%3C/svg%3E");
 }
 
 /* Selector de idioma */
@@ -53,50 +54,61 @@ nav a:visited {
     color: #333;
 }
 .lang-switch a:hover {
-    background: #ffb6c1;
-    color: white;
+    background: #FFCF9F; /* NAV pastel */
+    color: #3A3A3A;
 }
 
-/* HERO */
+
+/* ===================== HERO ===================== */
+
 .hero {
-    background: #ffecec;
+    background: #F6EFFF; /* pastel lavanda clarito */
     padding: 60px 20px;
-    border-bottom: 4px solid #ff9db5;
+    border-bottom: 4px solid #DCCAF8; /* lavanda más intenso */
 }
+
 .hero h1 {
-    color: #d23b59;
+    color: #A786DF; /* lavanda principal */
     font-weight: 700;
 }
 
-/* Títulos */
+
+/* ===================== TÍTULOS ===================== */
+
 .section-title {
-    color: #d23b59;
-    border-left: 6px solid #ff9db5;
+    color: #A786DF; /* lavanda */
+    border-left: 6px solid #8ED6B4; /* verde menta acento */
     padding-left: 10px;
     margin-bottom: 25px;
     font-weight: 700;
 }
 
-/* Tarjetas */
+
+/* ===================== TARJETAS ===================== */
+
 .card-custom {
     background: white;
     border-radius: 15px;
     padding: 20px;
-    border: 2px solid #ffd6dd;
+    border: 2px solid #E8F9F2; /* borde menta suave */
     transition: 0.3s;
 }
+
 .card-custom:hover {
     transform: scale(1.02);
-    border-color: #ff9db5;
+    border-color: #8ED6B4; /* menta más intenso */
 }
 
-/* Footer */
+
+/* ===================== FOOTER ===================== */
+
 footer {
-    background: black;
-    color: white;
+    background: #9EC5FF; /* azul pastel calmado */
+    color: #FFFFFF;
     padding: 15px;
     margin-top: 40px;
 }
+
 footer a { 
     color: white; 
 }
